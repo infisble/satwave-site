@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white/80 font-sans antialiased;
+    font-weight: 300;
+    background: transparent;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white font-normal;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl tracking-tighter;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl tracking-tight;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+  }
+
+  .neumorphic-btn {
+    border-radius: 1rem;
+    transition: all 0.3s;
+    box-shadow: inset 2px 2px 6px rgba(0,0,0,0.5), inset -2px -2px 6px rgba(255,255,255,0.05);
+  }
+
+  .neumorphic-btn:hover {
+    transform: scale(1.05);
+    box-shadow: inset 2px 2px 6px rgba(0,0,0,0.5), inset -2px -2px 6px rgba(255,255,255,0.05), 0 0 20px rgba(0,255,136,0.4);
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #00ff88, #00cc66, #00ffaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide Spline watermark by cropping it out of view */
+.spline-wrapper {
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.spline-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: calc(100vh + 60px); /* extend height beyond viewport */
+  margin-bottom: -60px;       /* pushes the Spline watermark off-screen */
+  border: none;
+  pointer-events: none;
+  /* Performance optimizations for smooth rotation */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Improve text readability with shadows */
+h1, h2, h3 {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 255, 136, 0.3);
+}
+
+p {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  lunexa-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lunexa-website
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+    networks:
+      - lunexa-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  lunexa-network:
+    driver: bridge
