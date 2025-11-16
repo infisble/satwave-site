@@ -50,7 +50,7 @@ export default function Testimonials() {
           className="text-center mb-4"
           suppressHydrationWarning
         >
-          Trusted by Traders Worldwide
+          Trusted by Circularity Leaders
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export default function Testimonials() {
           className="text-center text-white/60 text-lg max-w-2xl mx-auto"
           suppressHydrationWarning
         >
-          Real results from real traders using Lunexa's AI-powered strategies
+          Real impact from municipalities, recyclers, and citizen networks powered by SatWave
         </motion.p>
       </div>
 

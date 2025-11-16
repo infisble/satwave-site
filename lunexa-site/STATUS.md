@@ -1,6 +1,6 @@
-# ✅ Lunexa Website - RUNNING
+# вњ… SatWave Website - RUNNING
 
-## 🚀 Server Status: ACTIVE
+## рџљЂ Server Status: ACTIVE
 
 **Development server is running at:**
 - **Local**: http://localhost:3000
@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Quick Access
+## рџЋЇ Quick Access
 
 ### Open the Site
 Click here: **[http://localhost:3000](http://localhost:3000)**
@@ -17,7 +17,7 @@ Or double-click: **`START.bat`** (auto-opens browser)
 
 ---
 
-## 📱 What to See
+## рџ“± What to See
 
 ### Homepage
 Navigate through all sections:
@@ -55,33 +55,33 @@ Navigate through all sections:
 
 ---
 
-## 🎨 Features to Test
+## рџЋЁ Features to Test
 
 ### Desktop
-✅ Sticky navbar (scroll to see blur effect)
-✅ 3D pipeline scene animation
-✅ Hover effects on buttons
-✅ Auto-scrolling testimonials
-✅ FAQ accordion
-✅ Smooth scroll to sections
+вњ… Sticky navbar (scroll to see blur effect)
+вњ… 3D pipeline scene animation
+вњ… Hover effects on buttons
+вњ… Auto-scrolling testimonials
+вњ… FAQ accordion
+вњ… Smooth scroll to sections
 
 ### Mobile (resize browser)
-✅ Burger menu icon (top right)
-✅ Slide-in menu from right
-✅ Touch-friendly buttons
-✅ Responsive layout
-✅ Mobile-optimized spacing
+вњ… Burger menu icon (top right)
+вњ… Slide-in menu from right
+вњ… Touch-friendly buttons
+вњ… Responsive layout
+вњ… Mobile-optimized spacing
 
 ### Interactions
-✅ Click "Get Started" buttons
-✅ Navigate using top menu links
-✅ Click footer links
-✅ Expand FAQ items
-✅ Browse blog posts
+вњ… Click "Get Started" buttons
+вњ… Navigate using top menu links
+вњ… Click footer links
+вњ… Expand FAQ items
+вњ… Browse blog posts
 
 ---
 
-## 🛠️ Commands
+## рџ› пёЏ Commands
 
 ### Stop Server
 Press `Ctrl + C` in the terminal
@@ -104,9 +104,9 @@ npm start
 
 ---
 
-## 📊 Build Info
+## рџ“Љ Build Info
 
-**Status**: ✅ Compiled successfully
+**Status**: вњ… Compiled successfully
 **Build Time**: ~7.6s
 **Errors**: 0
 **Warnings**: 0
@@ -119,7 +119,7 @@ npm start
 
 ---
 
-## 🎯 Demo Checklist
+## рџЋЇ Demo Checklist
 
 When showing to others:
 
@@ -138,7 +138,7 @@ When showing to others:
 
 ---
 
-## 💡 Tips
+## рџ’Ў Tips
 
 **Performance**:
 - The site loads in ~2 seconds
@@ -156,7 +156,7 @@ When showing to others:
 
 ---
 
-## ❓ Troubleshooting
+## вќ“ Troubleshooting
 
 **Port 3000 in use?**
 ```bash
@@ -173,7 +173,7 @@ npm run dev -- -p 3001
 
 ---
 
-## 📞 Support Files
+## рџ“ћ Support Files
 
 - **QUICKSTART.md** - Detailed setup guide
 - **README.md** - Technical documentation
@@ -184,6 +184,6 @@ npm run dev -- -p 3001
 
 **Last Updated**: Now (Server Running)
 **Next.js Version**: 15.5.6
-**Status**: ✅ Production Ready
+**Status**: вњ… Production Ready
 
-**Enjoy exploring Lunexa!** 🚀
+**Enjoy exploring SatWave!** рџљЂ

@@ -85,10 +85,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg mb-1">Email</h3>
                     <a
-                      href="mailto:support@lunexa.com"
+                      href="mailto:support@satwave.com"
                       className="text-white/70 hover:text-accent-cyan transition-colors"
                     >
-                      support@lunexa.com
+                      support@satwave.com
                     </a>
                   </div>
                 </div>

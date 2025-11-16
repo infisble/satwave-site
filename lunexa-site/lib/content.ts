@@ -1,267 +1,234 @@
-// Auto-generated content for Lunexa, adapted from SatWave principles
-// Mission: Democratize institutional crypto strategies through transparent AI
+﻿// Auto-generated content for SatWave, now aligned with the climate-tech platform
+// Mission: Make waste visible, valuable, and manageable at scale
 
 export const siteContent = {
   brand: {
-    name: "Lunexa",
-    tagline: "Trade Smarter. Automate with AI.",
+    name: "SatWave",
+    tagline: "Waste intelligence from orbit to street level.",
     mission:
-      "We're democratizing institutional-grade crypto trading strategies through transparent, explainable AI. Lunexa automates decision-making, reduces risk, and maximizes returns—creating a data-driven wave that empowers traders globally.",
+      "SatWave is a climate-tech platform that turns waste data into real environmental action. We combine satellite imagery, AI-powered computer vision, and smart waste infrastructure to detect illegal dumping, classify materials, and connect recyclers with new streams of secondary raw materials.",
     vision:
-      "To transform crypto trading from speculation to systematic, AI-augmented strategy execution accessible to everyone.",
+      "By making waste traceable from space to street level, we help cities and companies clean up faster, recycle more, and build a truly circular economy.",
   },
 
   hero: {
-    title: "Trade Smarter. Automate with AI.",
+    title: "Turn waste data into real environmental action",
     subtitle:
-      "Lunexa is your AI-powered crypto trading assistant. Connect your wallet, configure risk parameters, and let intelligent algorithms execute institutional-grade strategies 24/7.",
-    cta: "Get Started",
-    secondaryCta: "Watch Demo",
+      "Satellite detection, ground sensors, and AI classification come together in SatWave. Spot illegal dumps, see what waste is on the ground, route it to the right recycler, and measure the climate impact of every cleanup.",
+    cta: "Book a live demo",
+    secondaryCta: "Download overview",
   },
 
   featured: {
-    title: "Featured in",
+    title: "Trusted by urban innovation leaders",
     logos: [
-      { name: "Forbes", slug: "forbes" },
+      { name: "UN-Habitat", slug: "un-habitat" },
+      { name: "World Bank Cities", slug: "world-bank" },
+      { name: "Circularity100", slug: "circularity" },
+      { name: "ESA Climate", slug: "esa" },
       { name: "TechCrunch", slug: "techcrunch" },
-      { name: "CoinDesk", slug: "coindesk" },
-      { name: "Bloomberg", slug: "bloomberg" },
-      { name: "Wired", slug: "wired" },
     ],
   },
 
   testimonials: [
     {
-      name: "Sarah Chen",
-      role: "Quantitative Trader",
-      avatar: "SC",
-      result: "+32% ROI",
-      period: "90 days",
+      name: "Aija Petrova",
+      role: "Deputy Mayor of Riga",
+      avatar: "AP",
+      result: "72 illegal dumps cleared",
+      period: "in 6 months",
       quote:
-        "Lunexa's AI adapts to market conditions faster than I ever could manually. The explainable decisions give me confidence.",
+        "SatWave finally gave us proof of where waste accumulates. Crews now go straight to the hotspots and citizens see progress on the public map.",
     },
     {
-      name: "Marcus Rodriguez",
-      role: "DeFi Investor",
+      name: "Mateo Ruiz",
+      role: "COO, Circular North Recycling",
       avatar: "MR",
-      result: "−35% Max Drawdown",
-      period: "6 months",
+      result: "18 new material streams",
+      period: "opened in one quarter",
       quote:
-        "Risk controls are game-changing. I sleep better knowing my portfolio is protected by intelligent stop-losses.",
+        "The marketplace surfaces pre-qualified batches with photos, GPS, and yield estimates. We no longer spend days sourcing secondary raw materials.",
     },
     {
-      name: "Emily Watson",
-      role: "Crypto Fund Manager",
-      avatar: "EW",
-      result: "+28% Annual",
-      period: "12 months",
+      name: "Nadia Fierro",
+      role: "Head of Sustainability, Baltic Steel",
+      avatar: "NF",
+      result: "22% more recycled feedstock",
+      period: "year over year",
       quote:
-        "Backtesting saved us from costly mistakes. We validated strategies before risking real capital.",
+        "Computer vision tagging means we know the metal purity before sending trucks. That transparency makes circular procurement viable at scale.",
     },
     {
-      name: "David Kim",
-      role: "Tech Entrepreneur",
-      avatar: "DK",
-      result: "5x Trading Efficiency",
-      period: "3 months",
+      name: "Szymon Kowalski",
+      role: "Citizen Science Lead, Clean Vistula",
+      avatar: "SK",
+      result: "11k community reports",
+      period: "submitted via SatWave",
       quote:
-        "Multi-exchange automation means I can arbitrage opportunities I'd miss manually. Pure alpha generation.",
+        "People love seeing their report flow from satellite flag to recycler pickup. The feedback loop keeps volunteers motivated week after week.",
     },
     {
-      name: "Lisa Patel",
-      role: "Institutional Trader",
-      avatar: "LP",
-      result: "+41% Sharpe Ratio",
-      period: "8 months",
+      name: "Lena Duarte",
+      role: "IoT Product Director, BinSight",
+      avatar: "LD",
+      result: "40+ sensor fleets connected",
+      period: "across 5 countries",
       quote:
-        "The AI's risk-adjusted returns outperform my previous manual strategies. Data doesn't lie.",
+        "Our smart bins plug into SatWave's API and immediately become part of a much larger intelligence graph. Sales cycles shortened because cities want turnkey interoperability.",
     },
     {
-      name: "James Morrison",
-      role: "Crypto Analyst",
-      avatar: "JM",
-      result: "−22% Volatility",
-      period: "4 months",
+      name: "Dr. Farid Malik",
+      role: "Environmental Economist",
+      avatar: "FM",
+      result: "EUR 3.2M waste-to-value",
+      period: "documented in 2024",
       quote:
-        "Smoother equity curve, fewer sleepless nights. Lunexa brings institutional discipline to retail.",
+        "Linking dumps to recyclers unlocked revenue we could quantify, which in turn justified new cleanup budgets. Data converted sustainability into finance.",
     },
   ],
 
   howItWorks: [
     {
-      title: "Connect Your Wallet",
+      title: "Detect",
       description:
-        "Securely link your exchange accounts or Web3 wallets. We support Binance, Coinbase, Kraken, MetaMask, and more.",
-      icon: "Wallet",
-      image: "/images/connect-wallet.svg",
+        "AI models scan Sentinel-2 and commercial imagery to flag suspicious dumps, surface changes, and heat maps of waste pressure zones.",
+      icon: "Planet",
+      image: "/images/detect.svg",
     },
     {
-      title: "Configure AI Assistant",
+      title: "Enrich",
       description:
-        "Set risk tolerance, capital allocation, and strategy preferences. Our AI learns from your goals and market data.",
-      icon: "Brain",
-      image: "/images/ai-config.svg",
+        "Local cameras, drone flyovers, smart bins, and citizen reports add close-up visuals plus precise GPS coordinates for each alert.",
+      icon: "MapPinLine",
+      image: "/images/enrich.svg",
     },
     {
-      title: "Automate Trading",
+      title: "Classify",
       description:
-        "Deploy strategies with one click. Monitor real-time performance, receive alerts, and adjust parameters anytime.",
-      icon: "ChartLine",
-      image: "/images/automate.svg",
+        "Computer vision models (YOLOv8, U-Net, Detectron2) identify waste types--plastic, metal, e-waste, organics--and group them into raw-material batches.",
+      icon: "StackSimple",
+      image: "/images/classify.svg",
+    },
+    {
+      title: "Match & Monetize",
+      description:
+        "Recyclers browse an interactive map and marketplace, estimate value per batch, and schedule pickup directly with municipalities or operators.",
+      icon: "ArrowsLeftRight",
+      image: "/images/match.svg",
+    },
+    {
+      title: "Measure Impact",
+      description:
+        "Every cleanup logs materials recovered, CO2 savings, and verified-before/after imagery so teams can report results in minutes, not months.",
+      icon: "TrendUp",
+      image: "/images/impact.svg",
     },
   ],
 
   features: [
     {
-      title: "AI Strategies & Backtesting",
+      title: "Satellite Detection & Alerts",
       description:
-        "Test strategies against historical data. Validate performance before deploying capital. Machine learning optimizes parameters continuously.",
+        "Continuous monitoring of Sentinel-2, PlanetScope, and radar imagery reveals illegal dumps days after they appear with automated citywide alerting.",
+      icon: "Planet",
+    },
+    {
+      title: "Vision-Powered Waste Classification",
+      description:
+        "AI models label materials down to fractions of a percent, attach confidence scores, and create standardized 'batches' ready for downstream processing.",
+      icon: "Scan",
+    },
+    {
+      title: "Circular Marketplace & Routing",
+      description:
+        "Interactive maps connect municipalities, recyclers, and logistics partners so every pile is routed to the most valuable recycler or reuse facility.",
+      icon: "ArrowsClockwise",
+    },
+    {
+      title: "Impact Dashboards & Reporting",
+      description:
+        "Executive dashboards track dumps cleared, tons diverted, and CO2 savings with exports formatted for ESG, CSRD, and municipal transparency requirements.",
       icon: "ChartLineUp",
-    },
-    {
-      title: "Risk Controls & Alerts",
-      description:
-        "Dynamic stop-losses, position sizing, and volatility-adjusted exposure. Real-time alerts via Telegram, email, or SMS.",
-      icon: "ShieldCheck",
-    },
-    {
-      title: "Multi-Exchange Wallet Connect",
-      description:
-        "Trade across CEXs and DEXs from one dashboard. API integration with military-grade encryption. Non-custodial for DeFi.",
-      icon: "CirclesThree",
-    },
-    {
-      title: "Explainable Decisions",
-      description:
-        "Every trade comes with reasoning. No black boxes—see why the AI entered, exited, or held positions with full transparency.",
-      icon: "Lightbulb",
     },
   ],
 
   pricing: [
     {
-      name: "Free",
-      price: "$0",
+      name: "Pilot Program",
+      price: "EUR 0",
       period: "/month",
-      description: "Perfect for testing and learning",
+      description: "Validate SatWave in a single city district",
       features: [
-        "Backtest sandbox (unlimited)",
-        "1 strategy slot",
-        "Paper trading mode",
-        "Basic risk alerts",
-        "Community support",
+        "1 monitored area (50 km^2)",
+        "Weekly satellite refresh",
+        "Citizen reporting microsite",
+        "Basic impact dashboard",
+        "Email support",
       ],
-      cta: "Start Free",
+      cta: "Launch pilot",
       highlighted: false,
     },
     {
-      name: "Pro",
-      price: "$49",
+      name: "Operations",
+      price: "EUR 3,500",
       period: "/month",
-      description: "For serious traders",
+      description: "Full-stack waste intelligence for city teams",
       features: [
-        "Live trading (unlimited)",
-        "5 strategy slots",
-        "Advanced risk management",
-        "Multi-exchange support",
-        "Priority support",
-        "Custom indicators",
-        "Real-time alerts",
+        "Unlimited detection zones",
+        "Sensor & drone ingestion",
+        "Marketplace access for recyclers",
+        "Automated ESG/CSRD reports",
+        "API + integrations",
+        "Dedicated success manager",
       ],
-      cta: "Upgrade to Pro",
+      cta: "Talk to sales",
       highlighted: true,
-      badge: "Recommended",
+      badge: "Most popular",
     },
     {
-      name: "Enterprise",
+      name: "National Network",
       price: "Custom",
       period: "",
-      description: "Institutional solutions",
+      description: "Inter-agency command center across regions",
       features: [
-        "Unlimited strategy slots",
-        "White-label platform",
-        "Dedicated infrastructure",
-        "SLA guarantee",
-        "SSO & team management",
-        "Custom integrations",
-        "24/7 dedicated support",
+        "Multi-city governance",
+        "Private data lake deployment",
+        "On-prem or sovereign cloud",
+        "24/7 mission control",
+        "Custom model training",
+        "Impact verification services",
       ],
-      cta: "Contact Sales",
+      cta: "Design your rollout",
       highlighted: false,
     },
   ],
 
   faq: [
     {
-      question: "How secure is Lunexa?",
-      answer:
-        "We use military-grade encryption (AES-256) for API keys and never store withdrawal permissions. For DeFi, we're non-custodial—you maintain full control. All infrastructure is SOC 2 Type II compliant.",
-    },
-    {
-      question: "Which exchanges do you support?",
-      answer:
-        "CEXs: Binance, Coinbase Pro, Kraken, KuCoin, Bybit. DEXs: Uniswap, PancakeSwap, SushiSwap (via MetaMask/WalletConnect). We add new integrations monthly based on user requests.",
-    },
-    {
-      question: "What are the fees?",
-      answer:
-        "Lunexa charges only subscription fees—no commission on trades. You pay normal exchange fees. Pro is $49/mo, Enterprise is custom priced. No hidden costs.",
-    },
-    {
-      question: "Can I trust the AI's decisions?",
-      answer:
-        "Absolutely. Every trade includes explainable reasoning (feature importance, signal breakdown, risk assessment). You can override or pause anytime. We're committed to transparent, auditable AI.",
-    },
-    {
-      question: "What if I lose money?",
-      answer:
-        "Crypto trading carries inherent risk. Lunexa mitigates it through risk controls, but we cannot guarantee profits. Always trade with capital you can afford to lose. Backtest thoroughly before going live.",
-    },
-    {
-      question: "How does backtesting work?",
-      answer:
-        "We replay historical market data (tick-level for major pairs) and simulate your strategy's performance, including slippage and fees. Results show max drawdown, Sharpe ratio, win rate, and equity curves.",
-    },
-    {
-      question: "Can I customize strategies?",
-      answer:
-        "Yes. Pro users can create custom indicators, combine signals, and adjust ML hyperparameters. Enterprise clients get full strategy SDK access with Python/JavaScript hooks.",
-    },
-    {
-      question: "Do you offer customer support?",
-      answer:
-        "Free: Community Discord. Pro: Email + priority Discord channel (24h response). Enterprise: Dedicated Slack channel + phone support with <2h SLA.",
-    },
-    {
-      question: "What is SatWave?",
-      answer:
-        "SatWave is a climate-tech platform that turns waste data into measurable action. It blends satellite imagery, AI computer vision, and smart waste infrastructure to detect illegal dumping, classify material types, and connect recyclers to new secondary raw material streams.",
-    },
-    {
       question: "What problems does SatWave solve?",
       answer:
-        "Illegal dumps grow faster than they are cleaned, recoverable material is buried in landfills, and cities lack real-time visibility. SatWave closes that gap with a waste intelligence layer that spots suspicious dumps, understands the material on the ground, routes it to recyclers as a monetizable resource, and tracks the impact of every cleanup.",
+        "Illegal dumps grow faster than they're cleaned, recyclable material gets buried, and cities lack real-time visibility. SatWave closes that gap by spotting dumps, understanding what's on the ground, routing it to recyclers as a monetizable resource, and tracking the impact of every cleanup.",
     },
     {
-      question: "How does SatWave work?",
+      question: "Where does the data come from?",
       answer:
-        "Detect: Sentinel-2 and other imagery reveal illegal dumps and temporal changes. Enrich: Local cameras, smart bins, and citizen reports add ground truth photos and GPS. Classify: AI models like YOLOv8, U-Net, and Detectron2 identify waste types and bundle them into raw-material batches. Match & Monetize: Recyclers use an interactive map and marketplace to discover batches, price them, and schedule pickup. Measure Impact: Every cleaned site logs recovered materials and CO2 savings.",
+        "We blend multi-spectral satellite imagery, radar, local cameras, drone flights, smart-bin sensors, and verified citizen reports. Each source is timestamped, georeferenced, and fused inside SatWave's waste intelligence layer.",
     },
     {
-      question: "Who does SatWave serve?",
+      question: "How do you measure ROI?",
       answer:
-        "Municipalities get a live dump map, hotspot analytics, and smarter cleanup routing. Recyclers and waste companies access pre-qualified batches and forecasting. Citizens can report waste and gamify participation, while IoT and smart-bin providers integrate via API to become part of the intelligence network.",
+        "Dashboards translate every action into tons recovered, CO2 savings, and euros unlocked from secondary raw materials. Municipalities use the metrics for transparency, while recyclers see forecasted feedstock volumes weeks in advance.",
     },
     {
-      question: "What is SatWave's vision?",
+      question: "Who uses SatWave?",
       answer:
-        "SatWave believes waste is a data problem. By making every pile traceable from orbit to street level, the platform aims to shrink illegal dumping, raise recycling rates, unlock new value from secondary raw materials, and bring full transparency to global waste management--moving cities and companies from reactive cleanup toward proactive, profitable circularity.",
+        "Municipalities and public works agencies orchestrate cleanup, recyclers discover inventory, citizens report waste and earn recognition, and IoT providers integrate via API to make their sensors part of a larger intelligence network.",
     },
   ],
 
   footer: {
     description:
-      "Empowering traders worldwide with transparent AI-driven strategies. Trade smarter, not harder.",
+      "SatWave turns earth observation and computer vision into bold circular-economy action for cities, recyclers, and citizens.",
     social: [
       { name: "Twitter", url: "#", icon: "TwitterLogo" },
       { name: "Discord", url: "#", icon: "DiscordLogo" },
@@ -282,520 +249,226 @@ export const siteContent = {
       legal: [
         { name: "Privacy Policy", href: "#" },
         { name: "Terms of Service", href: "#" },
-        { name: "Risk Disclosure", href: "#" },
+        { name: "Data Ethics", href: "#" },
       ],
     },
   },
 };
 
 export const aboutContent = {
-  title: "About Lunexa",
-  subtitle: "Building the future of intelligent crypto trading",
+  title: "About SatWave",
+  subtitle: "Where Earth observation meets the circular economy",
   mission:
-    "At Lunexa, we believe sophisticated trading strategies shouldn't be locked behind institutional walls. We're democratizing access to AI-powered trading tools that were previously available only to hedge funds and proprietary trading firms.",
+    "We make waste visible, valuable, and manageable at scale so cities, companies, and citizens can move from reactive cleanup to proactive circularity.",
   story:
-    "Founded in 2023 by a team of quantitative traders, machine learning engineers, and blockchain veterans, Lunexa emerged from a simple frustration: retail traders lacked the tools to compete. We built Lunexa to level the playing field—combining institutional-grade infrastructure with accessible interfaces and transparent AI.",
+    "SatWave was founded by climate scientists, GIS engineers, and recycling operators who were tired of seeing waste pile up simply because nobody shared the same data. We built a platform that merges satellites, sensors, and community inputs into one real-time map of the world's discarded resources.",
   values: [
     {
-      title: "Transparency",
+      title: "Visibility",
       description:
-        "No black boxes. Every AI decision is explainable. Open roadmap, honest communication.",
+        "If you can't see the waste, you can't solve it. We invest in satellites, sensors, and community tools that shine light on every dump.",
       icon: "Eye",
     },
     {
-      title: "Risk-First",
+      title: "Accountability",
       description:
-        "Protecting capital is paramount. Advanced risk controls are standard, not optional.",
+        "Audit trails, before/after imagery, and open reporting make environmental progress undeniable for citizens and regulators alike.",
       icon: "ShieldCheck",
     },
     {
-      title: "Continuous Learning",
+      title: "Circularity",
       description:
-        "Markets evolve. Our AI adapts. We invest heavily in R&D to stay ahead of market dynamics.",
-      icon: "Brain",
+        "Waste is just misplaced resource. We design every workflow to route materials back into productive loops.",
+      icon: "ArrowsClockwise",
     },
     {
-      title: "User Empowerment",
+      title: "Community",
       description:
-        "You're in control. Override AI, adjust parameters, or go fully manual—flexibility is key.",
-      icon: "User",
+        "Cities, recyclers, citizens, and IoT partners are part of the same network. Collaboration beats siloed effort every time.",
+      icon: "Users",
     },
   ],
   team: [
     {
-      name: "Alex Rivera",
-      role: "CEO & Co-Founder",
-      bio: "Former quantitative trader at Two Sigma. 10+ years in algorithmic trading and machine learning.",
-      avatar: "AR",
+      name: "Dr. Mila Anders",
+      role: "Co-Founder & CEO",
+      bio: "Remote sensing scientist who led ESA-backed illegal dumping studies across Eastern Europe.",
+      avatar: "MA",
     },
     {
-      name: "Dr. Maya Patel",
-      role: "CTO & Co-Founder",
-      bio: "Ph.D. in Computer Science (MIT). Previously led AI research at a top crypto exchange.",
-      avatar: "MP",
+      name: "Luis Carvalho",
+      role: "CTO",
+      bio: "Former head of computer vision at a smart-city scale-up, specializing in YOLOv8 and segmentation models.",
+      avatar: "LC",
     },
     {
-      name: "Jordan Lee",
-      role: "Head of Product",
-      bio: "Ex-Coinbase product manager. Passionate about user-centric design in complex systems.",
-      avatar: "JL",
+      name: "Rafia Osman",
+      role: "Chief Circularity Officer",
+      bio: "Spent a decade running material recovery facilities and knows exactly what recyclers need to bid confidently.",
+      avatar: "RO",
     },
     {
-      name: "Samira Khan",
-      role: "Chief Risk Officer",
-      bio: "20 years in financial risk management. Former VP at Goldman Sachs derivatives desk.",
-      avatar: "SK",
+      name: "Piotr Lewandowski",
+      role: "VP of Product",
+      bio: "Built municipal data products for GovTech Poland and obsesses over transparent public reporting.",
+      avatar: "PL",
     },
   ],
   tech: {
     title: "Technology Stack",
     description:
-      "Built on cutting-edge infrastructure to ensure speed, reliability, and security.",
+      "From orbiting satellites to citizen apps, SatWave's stack is engineered for trustworthy environmental intelligence.",
     stack: [
-      "Machine Learning: PyTorch, TensorFlow, scikit-learn",
-      "Data Pipeline: Apache Kafka, Redis, PostgreSQL with TimescaleDB",
-      "Backend: Python (FastAPI), Node.js (microservices), Go (execution engine)",
-      "Frontend: React, Next.js, TypeScript, Tailwind CSS",
-      "Infrastructure: AWS (multi-region), Kubernetes, Terraform",
-      "Security: Vault (secret management), SOC 2 Type II certified",
+      "Earth Observation: Sentinel-2, PlanetScope, ICEYE SAR",
+      "Computer Vision: YOLOv8, U-Net, Detectron2, Roboflow",
+      "Data Pipeline: Apache Airflow, Kafka, PostGIS, DuckDB",
+      "APIs & Apps: Next.js, TypeScript, React Native, GraphQL",
+      "Infrastructure: Kubernetes on AWS + sovereign cloud options",
+      "Security & Compliance: ISO 27001 controls, GDPR-ready data governance",
     ],
   },
   compliance:
-    "Lunexa operates in compliance with applicable regulations. We are registered as a software provider (not a broker). Users trade on their own accounts; we provide tools, not financial advice. Always consult a licensed advisor before trading.",
+    "SatWave operates as a software provider for municipalities, recyclers, and environmental agencies. We never take ownership of waste; we provide intelligence. Data is stored in-region to respect privacy laws, and every dataset includes provenance for regulatory reporting.",
 };
 
 export const blogPosts = [
   {
-    slug: "ai-driven-crypto-trading",
-    title: "AI-Driven Crypto Trading: From Signals to Automation",
+    slug: "making-waste-visible",
+    title: "Making Waste Visible: Satellite Monitoring for Cleaner Cities",
     excerpt:
-      "Explore how artificial intelligence is transforming crypto trading from manual signal-chasing to fully automated, data-driven strategy execution.",
-    coverImage: "/images/blog/ai-crypto.jpg",
-    date: "2025-01-10",
+      "Illegal dumps grow faster than manual patrols can handle. Here's how satellite data plus AI closes the visibility gap for municipal teams.",
+    coverImage: "/images/blog/satellite-dumps.jpg",
+    date: "2025-01-08",
     readTime: "8 min read",
-    tags: ["AI", "Trading", "Automation"],
+    tags: ["Earth Observation", "Municipal Tech", "Circular Economy"],
     content: `
-# AI-Driven Crypto Trading: From Signals to Automation
+# Making Waste Visible: Satellite Monitoring for Cleaner Cities
 
-The crypto markets never sleep—and neither do AI trading systems. In this deep dive, we explore how artificial intelligence is revolutionizing the way traders approach volatile digital asset markets.
+Every city struggles with hidden or fast-growing dumpsites. Traditional field inspections can only cover a tiny portion of the territory each week, which means waste piles quietly expand in industrial outskirts, riverbanks, or abandoned lots.
 
-## The Evolution of Trading
+## Satellites Change the Equation
 
-Traditional trading relied on human intuition, technical analysis, and manual order execution. While these skills remain valuable, they're limited by human psychology, fatigue, and processing speed.
+Sentinel-2 and commercial constellations capture multi-spectral imagery every few days. When combined with machine learning, we can detect the subtle spectral signatures that indicate fresh debris, soil disruption, or suspicious trucks entering the same field repeatedly.
 
-**Enter AI:** Machine learning models can analyze thousands of data points per second, identify patterns invisible to human traders, and execute strategies with millisecond precision—all while maintaining emotional neutrality.
+- **Temporal change detection** highlights areas whose reflectance has shifted drastically.
+- **Moisture analysis** spots organic waste versus inert materials.
+- **Thermal cues** reveal active burning.
 
-## How AI Trading Works
+## From Pixel to Action
 
-### Data Ingestion
+Detection alone is not enough. SatWave automatically creates tasks for municipal crews, attaches before imagery, and requests ground validation through citizen apps or partner drones. Once verified, the site enters the cleanup queue with routing recommendations.
 
-AI systems consume multiple data streams:
-- **Price & Volume:** Real-time OHLCV from exchanges
-- **On-Chain Metrics:** Wallet movements, network activity, gas fees
-- **Sentiment Analysis:** Social media, news sentiment scores
-- **Macro Indicators:** Traditional finance correlations, DXY, bond yields
+## Transparency Residents Can See
 
-### Feature Engineering
-
-Raw data is transformed into predictive features:
-- Moving average crossovers, RSI, MACD (traditional indicators)
-- Volatility regimes, correlation breakdowns
-- Network value to transactions (NVT) ratios
-- Funding rate imbalances
-
-### Model Training
-
-Supervised learning (predicting price direction) and reinforcement learning (optimizing trade sequences) combine to form robust strategies. Models are backtested across multiple market cycles to validate performance.
-
-### Execution
-
-Once a signal triggers, the AI system:
-1. Calculates optimal position size (risk parity, Kelly criterion)
-2. Splits orders to minimize slippage (TWAP, VWAP algorithms)
-3. Places trades across multiple exchanges if arbitrage exists
-4. Monitors execution and adjusts in real-time
-
-## Advantages Over Manual Trading
-
-**Speed:** React to market events in microseconds.
-**Consistency:** No emotional decisions during volatility.
-**Scalability:** Monitor hundreds of assets simultaneously.
-**Backtesting:** Validate strategies on years of historical data before risking capital.
-
-## Challenges & Risks
-
-**Overfitting:** Models that work perfectly on historical data may fail in live markets.
-**Black Swans:** AI cannot predict unprecedented events (exchange hacks, regulatory bans).
-**Execution Risk:** Slippage and latency can erode theoretical gains.
-
-## Best Practices
-
-1. **Start with backtesting:** Never trade untested strategies.
-2. **Use risk controls:** Stop-losses and position limits are non-negotiable.
-3. **Monitor regularly:** AI isn't "set and forget"—market regimes change.
-4. **Diversify strategies:** Don't rely on a single algorithm.
-
-## The Future
-
-We're moving toward **explainable AI** (understanding *why* decisions are made), **federated learning** (privacy-preserving model training), and **quantum computing** (solving optimization problems previously intractable).
-
-At Lunexa, we're building this future—one transparent, user-empowering algorithm at a time.
+Public dashboards show when each site was discovered, who reported it, and when it was cleaned. Trust is built when residents see the lifecycle from detection to remediation in the open.
 
 ---
 
-*Ready to automate your crypto trading? [Get started with Lunexa](#cta).*
-    `,
+*Ready to see every dump? [Book a demo](#cta).*`
   },
   {
-    slug: "risk-first-approach",
-    title: "Risk-First Approach: Managing Downside in AI Strategies",
+    slug: "computer-vision-for-recyclers",
+    title: "Computer Vision for Recyclers: Turning Photos into Feedstock Forecasts",
     excerpt:
-      "Discover the frameworks and techniques professional traders use to protect capital while maximizing upside in algorithmic crypto trading.",
-    coverImage: "/images/blog/risk-management.jpg",
-    date: "2025-01-05",
-    readTime: "10 min read",
-    tags: ["Risk Management", "Trading", "Strategy"],
+      "Recyclers spend hours guessing the quality of incoming waste. SatWave's classification pipeline gives them material certainty before the truck rolls.",
+    coverImage: "/images/blog/vision-recycling.jpg",
+    date: "2024-12-18",
+    readTime: "9 min read",
+    tags: ["Computer Vision", "Recycling", "AI"],
     content: `
-# Risk-First Approach: Managing Downside in AI Strategies
+# Computer Vision for Recyclers: Turning Photos into Feedstock Forecasts
 
-**The first rule of trading: Don't lose money. The second rule: Don't forget the first rule.** — Warren Buffett (adapted)
+Walk into any material recovery facility and you'll find a whiteboard full of guesses: How much HDPE is arriving this week? Is the next municipal tender full of mixed metals again? Uncertainty kills margins.
 
-In crypto's volatile landscape, risk management isn't optional—it's the difference between long-term success and catastrophic loss.
+## Training Models on Real Waste
 
-## Why Risk-First?
+SatWave's dataset blends labeled drone shots, bin cameras, and citizen uploads. YOLOv8 handles object detection, while U-Net maps coverage ratios for each material. Detectron2 segments e-waste components so recyclers know whether copper, aluminum, or plastics dominate.
 
-Traditional trading focuses on maximizing returns. **Risk-first** inverts this: minimize losses, and returns follow. Here's why:
+## Confidence Drives Decisions
 
-- **Survival:** A 50% loss requires a 100% gain to recover. Avoid large drawdowns at all costs.
-- **Compounding:** Consistent, modest gains compound faster than volatile swings.
-- **Psychological Capital:** Smaller drawdowns = less stress = better decision-making.
+Each batch receives:
 
-## Core Risk Management Frameworks
+- **Material composition** with percentage breakdowns
+- **Contamination risk** scored from 0–100
+- **Suggested processing lines** based on facility capabilities
 
-### 1. Position Sizing
+With that information, recyclers can price jobs accurately, allocate staff, and even resell excess materials upstream.
 
-**Kelly Criterion:** Allocates capital based on edge and odds.
-\`\`\`
-f* = (bp - q) / b
-Where:
-- f* = fraction of capital to risk
-- b = odds (profit/loss ratio)
-- p = probability of winning
-- q = probability of losing (1-p)
-\`\`\`
+## Beyond Photos
 
-**Risk Parity:** Equal risk contribution from each position (not equal dollar amounts). Volatility-weighted allocations.
-
-### 2. Stop-Losses
-
-**Fixed Percentage:** Exit if position drops X% (e.g., 2% rule).
-**Volatility-Adjusted:** Wider stops during high volatility (using ATR—Average True Range).
-**Time-Based:** Exit if thesis doesn't play out within expected timeframe.
-
-### 3. Diversification
-
-**Across Assets:** BTC, ETH, alts, stablecoins.
-**Across Strategies:** Trend-following, mean reversion, arbitrage.
-**Across Timeframes:** Scalping, swing trading, long-term holds.
-
-### 4. Drawdown Controls
-
-**Max Drawdown Limit:** Pause trading if portfolio drops X% from peak (e.g., 20%).
-**Daily Loss Limit:** Stop trading for the day after losing Y% (e.g., 5%).
-
-## AI-Enhanced Risk Management
-
-Machine learning adds new dimensions:
-
-**Dynamic Stop-Losses:** AI adjusts stops based on real-time volatility, correlation breakdowns, and regime shifts.
-
-**Portfolio Optimization:** Modern Portfolio Theory (Markowitz) meets reinforcement learning—AI finds the efficient frontier faster than humans.
-
-**Tail Risk Hedging:** Models detect early warning signs of "black swan" events (e.g., exchange liquidity crises) and hedge accordingly.
-
-## Common Pitfalls
-
-**Overleveraging:** Crypto's 20x–100x leverage is a double-edged sword. Use conservatively.
-**Ignoring Correlation:** "Diversified" altcoin portfolios often move in lockstep with BTC.
-**Revenge Trading:** After a loss, doubling down to "get even" is a fast path to ruin.
-
-## Lunexa's Risk Framework
-
-Our platform enforces:
-- **Pre-Trade Risk Checks:** Won't execute if position size exceeds limits.
-- **Real-Time Monitoring:** Alerts trigger before stop-losses hit.
-- **Scenario Analysis:** "What if BTC drops 30%?" simulations before deploying strategies.
-
-## Case Study: March 2020 Crypto Crash
-
-Bitcoin dropped 50% in 24 hours. Strategies *without* risk controls:
-- Overleveraged longs: Liquidated (-100%)
-- No stop-losses: -50% to -80% drawdowns
-
-Strategies *with* Lunexa-style controls:
-- Dynamic stops triggered early: -15% max drawdown
-- Diversified + hedged: -8% drawdown, recovered in 2 weeks
-
-## Takeaway
-
-**Risk management isn't glamorous, but it's what separates professionals from gamblers.** Build strategies around protecting capital, and profits will follow.
+Sensor data (weight, moisture, temperature) augments vision models to flag hazardous waste or organics that require special handling.
 
 ---
 
-*Trade with confidence. [Explore Lunexa's risk tools](#cta).*
-    `,
+*Need dependable supply? [Access the marketplace](#cta).*`
   },
   {
-    slug: "backtesting-without-self-deception",
-    title: "Backtesting Without Self-Deception: Methodology and Pitfalls",
+    slug: "citizen-ecosystem",
+    title: "Citizen Ecosystems that Power Circular Cities",
     excerpt:
-      "Learn how to conduct rigorous backtests that actually predict live performance—avoiding the traps that lead most strategies to fail in production.",
-    coverImage: "/images/blog/backtesting.jpg",
-    date: "2024-12-28",
-    readTime: "12 min read",
-    tags: ["Backtesting", "Strategy Development", "Data Science"],
+      "Crowdsourcing isn't just feel-good engagement. When paired with feedback loops, it becomes a measurable force multiplier for waste intelligence.",
+    coverImage: "/images/blog/citizen-action.jpg",
+    date: "2024-12-05",
+    readTime: "7 min read",
+    tags: ["Civic Tech", "Engagement", "Sustainability"],
     content: `
-# Backtesting Without Self-Deception: Methodology and Pitfalls
+# Citizen Ecosystems that Power Circular Cities
 
-**"In backtesting, the only thing easier than fooling others is fooling yourself."** — Anonymous Quant
+Cities that invite residents into the clean-up mission consistently outperform those that rely on inspectors alone. SatWave helps municipalities activate communities with tools that respect time and provide credit.
 
-Backtesting is the foundation of systematic trading. Done right, it validates strategies and prevents costly mistakes. Done wrong, it produces beautiful—but worthless—curves that collapse in live markets.
+## Simple Reporting, Rich Context
 
-## What is Backtesting?
+Residents snap a photo, add a short note, and the app automatically attaches GPS plus satellite context. Reports go through a lightweight moderation flow and, once approved, upgrade the AI models with fresh ground truth.
 
-**Backtesting** simulates how a strategy would have performed using historical data. It answers: *"If I had traded this algorithm over the past 3 years, what would my returns, drawdowns, and risk metrics look like?"*
+## Gamification that Matters
 
-## The Gold Standard
+Leaderboards showcase "waste heroes," neighborhoods compete on cleanup streaks, and tangible rewards (public recognition, transit credits) keep participation lively.
 
-### 1. Data Quality
+## Closing the Loop
 
-**Garbage in, garbage out.**
-- **Survivorship Bias:** Don't backtest only on coins that still exist. Include delisted/dead projects.
-- **Point-in-Time Data:** Use data as it existed *then*, not adjusted retrospectively.
-- **Tick-Level Precision:** For intraday strategies, minute/tick data > daily closes.
+The most important step: telling citizens what happened next. When a report leads to a cleanup or recycler pickup, the reporter gets images, tonnage, and CO2 avoided. That loop turns occasional reporters into long-term partners.
 
-### 2. Realistic Execution
+---
 
-**Assume slippage and fees.**
-- **Slippage:** Market orders don't fill at mid-price. Model 0.05%–0.2% slippage.
-- **Fees:** Include maker/taker fees (0.1%–0.5% depending on exchange/volume).
-- **Latency:** If strategy requires low latency, simulate realistic order-to-fill times.
+*Build a citizen-powered network. [See how cities use SatWave](#cta).*`
+  },
+  {
+    slug: "impact-reporting",
+    title: "Impact Reporting Without the Spreadsheet Chaos",
+    excerpt:
+      "Environmental teams lose weeks reconciling data for ESG and CSRD submissions. Automated impact tracking keeps every stakeholder aligned.",
+    coverImage: "/images/blog/impact-dashboard.jpg",
+    date: "2024-11-28",
+    readTime: "6 min read",
+    tags: ["Reporting", "ESG", "Data"],
+    content: `
+# Impact Reporting Without the Spreadsheet Chaos
 
-### 3. Avoid Look-Ahead Bias
+Waste departments juggle spreadsheets from contractors, recyclers, and IoT vendors. By the time quarterly ESG or CSRD disclosures are due, nobody trusts the numbers.
 
-**Never use future information.**
-- **Example Violation:** Calculating a moving average using tomorrow's close price.
-- **Fix:** Ensure indicators only use data available *at the time* decisions were made.
+## A Single Source of Truth
 
-### 4. Walk-Forward Analysis
-
-**Train on past data, test on unseen future data.**
-- Split data: 70% training, 30% out-of-sample testing.
-- Roll forward: Train on Year 1–2, test on Year 3. Then train on Year 2–3, test on Year 4, etc.
-
-### 5. Statistical Significance
-
-**One good backtest ≠ robust strategy.**
-- Run 1,000+ bootstrap simulations (random start dates).
-- Calculate confidence intervals for returns and Sharpe ratio.
-- If 95% CI includes negative returns, strategy is unreliable.
-
-## Common Pitfalls
-
-### Overfitting (Curve-Fitting)
-
-**Problem:** Tweaking parameters until backtest looks perfect, but strategy fails live.
-
-**Example:** Optimizing a moving average crossover to 17-day vs. 43-day because it had one extra winning trade in backtest.
-
-**Solution:** Use simple, logical rules. Limit parameter optimization. Validate on out-of-sample data.
-
-### Data Snooping
-
-**Problem:** Testing 100 strategies, showing only the 1 that worked.
-
-**Solution:** Pre-register hypotheses. Correct for multiple testing (Bonferroni correction).
-
-### Ignoring Market Regimes
-
-**Problem:** Strategy works in bull markets, fails in bear/sideways.
-
-**Solution:** Test across multiple regimes (2017 bull, 2018 bear, 2020 COVID crash, 2021 alt season, 2022 bear).
-
-### Small Sample Size
-
-**Problem:** Backtesting 6 months of data = statistically meaningless.
-
-**Solution:** Use ≥3 years of data (covering multiple market cycles). More for lower-frequency strategies.
-
-## Lunexa's Backtesting Engine
-
-Our platform enforces best practices:
-- **Tick-Level Data:** Crypto markets from 2015–present.
-- **Realistic Execution:** Configurable slippage/fees per exchange.
-- **Walk-Forward Built-In:** Automatic train/test splits.
-- **Monte Carlo Simulations:** 10,000 bootstrap runs to assess robustness.
-- **Regime Analysis:** Performance breakdown by bull/bear/sideways/high-vol periods.
-
-## Case Study: The "Perfect" Strategy That Wasn't
-
-**Backtest:** 200% annual return, 1.8 Sharpe ratio, 8% max drawdown (2019–2021 data).
-
-**Live Performance (2022):** -35% return, frequent stop-outs.
-
-**Why?** Strategy was optimized for low-volatility trending markets (2019–2020). When volatility spiked (2022 Fed hikes), it failed. Lack of out-of-sample testing on high-vol regimes.
-
-**Lesson:** Always test across diverse market conditions.
+SatWave logs every site, cleanup, and transported batch with immutable metadata: who, when, material type, tonnage, destination, and verified imagery. That record feeds dashboards and exports formatted for regulators.
 
 ## Metrics That Matter
 
-- **Sharpe Ratio:** Risk-adjusted return (>1.5 is good, >2 is excellent).
-- **Max Drawdown:** Largest peak-to-trough decline (keep <20%).
-- **Win Rate:** % of profitable trades (but higher ≠ better if losses are huge).
-- **Profit Factor:** Gross profit / gross loss (>1.5 minimum).
-- **Calmar Ratio:** Annual return / max drawdown (higher = better risk-adjusted).
+- Tons diverted from landfill
+- CO2 equivalent saved
+- Percent of waste monetized
+- Response time per incident
 
-## Final Thoughts
+## Audit-Ready in Clicks
 
-**Backtesting is an art and a science.** Discipline, skepticism, and rigorous methodology separate strategies that *look* good from those that *are* good.
-
-At Lunexa, we've built guardrails to keep you honest—because we know the temptation to self-deceive is strong.
+Because every data point carries provenance, auditors and citizens alike can dig into the chain of events. Transparency stops being painful and becomes a differentiator for forward-looking cities.
 
 ---
 
-*Validate your strategies properly. [Backtest with Lunexa](#cta).*
-    `,
-  },
-  {
-    slug: "explainable-ai-in-trading",
-    title: "Explainable AI in Trading: Transparency Builds Trust",
-    excerpt:
-      "Why black-box algorithms are dangerous in finance, and how explainable AI gives traders confidence in automated decision-making.",
-    coverImage: "/images/blog/explainable-ai.jpg",
-    date: "2024-12-20",
-    readTime: "9 min read",
-    tags: ["AI", "Explainability", "Trust"],
-    content: `
-# Explainable AI in Trading: Transparency Builds Trust
-
-**"A model you don't understand is a model you can't trust."** — Lunexa Principle
-
-In traditional finance, compliance officers demand explanations for every trade. In crypto, where billions move in seconds, the need for transparency is even greater.
-
-Yet many AI trading platforms operate as **black boxes**—mysterious algorithms that generate profits (or losses) without revealing *why*.
-
-**This is unacceptable.**
-
-## The Problem with Black Boxes
-
-**Lack of Trust:** Would you trust your money to a system that won't explain its decisions?
-
-**Regulatory Risk:** As crypto regulation tightens, unexplainable AI may violate compliance requirements.
-
-**Debugging Failures:** When a strategy fails, black-box systems leave you clueless. Explainable systems show *where* it broke.
-
-**Bias Amplification:** Hidden biases in data can lead to catastrophic decisions if left unexamined.
-
-## What is Explainable AI (XAI)?
-
-**XAI** makes machine learning models interpretable. Instead of "the model says buy," you get:
-
-*"The model recommends buying because:*
-1. *RSI dropped below 30 (oversold signal)*
-2. *On-chain volume spiked 3x average (accumulation detected)*
-3. *Correlation with BTC broke down (independent movement likely)*
-4. *Feature importance: 40% on-chain, 35% technical, 25% sentiment"*
-
-## Techniques for Explainability
-
-### 1. Feature Importance
-
-**SHAP (SHapley Additive exPlanations):** Quantifies each feature's contribution to a prediction.
-
-**Example:** "This trade was 60% driven by momentum indicators, 30% by volatility regime, 10% by sentiment."
-
-### 2. Decision Trees (Interpretable Models)
-
-**Gradient Boosting (XGBoost, LightGBM):** Powerful yet interpretable. You can visualize the decision path.
-
-**Example Tree:**
-\`\`\`
-If RSI < 30 AND Volume > 2x avg:
-  → BUY (confidence: 78%)
-Else if MACD crossover AND sentiment > 0.6:
-  → BUY (confidence: 65%)
-Else:
-  → HOLD
-\`\`\`
-
-### 3. LIME (Local Interpretable Model-Agnostic Explanations)
-
-**How it works:** Approximates the complex model's behavior locally (for a single prediction) using a simpler model.
-
-**Output:** "For *this specific trade*, the top 3 factors were X, Y, Z."
-
-### 4. Attention Mechanisms (for Deep Learning)
-
-**Transformers** (used in NLP/time-series) have built-in attention weights showing which data points the model "focused on."
-
-**Example:** "The model paid 80% attention to the past 4 hours of price action, 15% to funding rates, 5% to news sentiment."
-
-## Lunexa's Explainability Stack
-
-Every trade on Lunexa comes with:
-
-**Decision Breakdown:**
-- Signal components (technical, on-chain, sentiment)
-- Feature importance scores
-- Confidence level
-
-**Counterfactual Analysis:**
-- "If RSI had been 35 instead of 28, the model would have held instead of bought."
-
-**Risk Attribution:**
-- "This trade added 0.5% portfolio risk due to position size and volatility."
-
-**Historical Context:**
-- "Similar setups have won 72% of the time with average return of +4.2%."
-
-## Real-World Example
-
-**Scenario:** Lunexa AI buys ETH at $1,800.
-
-**Explanation:**
-- **Primary Signal:** Golden cross (50 EMA crossed above 200 EMA)
-- **Supporting Factors:**
-  - On-chain: Exchange reserves dropped 12% (supply shock)
-  - Sentiment: Twitter mentions +300%, 68% positive
-  - Macro: Bitcoin correlation weakened (ETH moving independently)
-- **Risk Assessment:** Position sized at 3% of portfolio (volatility-adjusted)
-- **Stop-Loss:** Placed at $1,710 (-5% threshold)
-- **Expected Outcome:** 68% win probability, target $1,950 (+8.3%)
-
-**Result:** User knows *exactly* why the trade was made. If it fails, they can analyze which assumption broke.
-
-## Benefits of Explainability
-
-**Trust:** Users trade with confidence, not blind faith.
-**Learning:** Understand *why* strategies work, improving your own skills.
-**Compliance:** Regulatory-ready audit trails.
-**Debugging:** Quickly identify and fix strategy flaws.
-
-## The Future: Interactive Explainability
-
-**What-If Analysis:** "What if I had set stop-loss at -3% instead of -5%?"
-**Scenario Simulation:** "How would this strategy perform if BTC dropped 20%?"
-**User Feedback Loops:** "This trade lost money—here's why. Should we adjust the model?"
-
-## Conclusion
-
-**Transparency isn't a luxury—it's a necessity.** At Lunexa, we believe you have a *right* to understand every decision your AI makes.
-
-Because trust isn't built in black boxes. It's built in the light.
-
----
-
-*Trade transparently. [Experience explainable AI with Lunexa](#cta).*
-    `,
+*See the reporting toolkit in action. [Request a walkthrough](#cta).*`
   },
 ];
+
+
+
+
+
+

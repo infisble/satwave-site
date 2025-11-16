@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="/" className="text-2xl font-semibold text-white tracking-tight">
-              Lunexa
+              SatWave
             </a>
 
             {/* Desktop Nav */}

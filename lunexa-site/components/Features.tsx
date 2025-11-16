@@ -1,15 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChartLineUp, ShieldCheck, CirclesThree, Lightbulb } from "phosphor-react";
+import {
+  Planet,
+  Scan,
+  ArrowsClockwise,
+  ChartLineUp,
+} from "phosphor-react";
 import { siteContent } from "@/lib/content";
 import GlassCard from "./GlassCard";
 
 const iconMap = {
+  Planet,
+  Scan,
+  ArrowsClockwise,
   ChartLineUp,
-  ShieldCheck,
-  CirclesThree,
-  Lightbulb,
 };
 
 export default function Features() {
@@ -25,7 +30,7 @@ export default function Features() {
           className="text-center mb-4"
           suppressHydrationWarning
         >
-          Powerful Features
+          Waste Intelligence Stack
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +40,7 @@ export default function Features() {
           className="text-center text-white/60 text-lg max-w-2xl mx-auto mb-16"
           suppressHydrationWarning
         >
-          Institutional-grade tools built for everyone
+          End-to-end tooling that turns orbital insights into circular action
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

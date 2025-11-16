@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lunexa | AI-Powered Crypto Trading Platform",
-  description: "Democratizing institutional crypto strategies with transparent AI. Automate decisions, reduce risk, and maximize returns with Lunexa's intelligent trading assistant.",
+  title: "SatWave | AI-Powered Crypto Trading Platform",
+  description: "Democratizing institutional crypto strategies with transparent AI. Automate decisions, reduce risk, and maximize returns with SatWave's intelligent trading assistant.",
   keywords: ["AI trading", "crypto", "automated trading", "risk management", "blockchain", "fintech"],
 };
 

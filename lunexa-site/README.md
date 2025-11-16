@@ -1,16 +1,16 @@
-# Lunexa - AI-Powered Crypto Trading Platform
+﻿# SatWave - Waste Intelligence Platform
 
-Production-ready website for Lunexa, featuring:
+Production-ready marketing site for SatWave, the climate-tech platform that turns waste data into real environmental action.
 
 ## Features
 
 - **Modern Design**: Glassmorphism cards, neumorphic buttons, luxury aesthetic
-- **3D Pipeline Scene**: Custom canvas-based animation with orbital particles
+- **Earth Observation Storytelling**: Hero + sections highlighting detection, classification, marketplaces, and circular impact
 - **Fully Responsive**: Desktop to mobile with burger menu
 - **Performance**: Optimized animations with Framer Motion
 - **Accessibility**: ARIA labels, keyboard navigation, semantic HTML
-- **Content-Rich**: Auto-generated content adapted from SatWave context
-- **Blog**: 4 pre-filled articles with markdown rendering
+- **Automated Copy**: Climate-tech messaging, FAQs, testimonials, and pricing powered by `lib/content.ts`
+- **Blog**: 4 pre-filled climate-tech articles rendered with Markdown
 
 ## Tech Stack
 
@@ -97,4 +97,10 @@ npm run build
 
 ## License
 
-Proprietary - Lunexa © 2025
+Proprietary - SatWave (c) 2025
+
+
+
+
+
+

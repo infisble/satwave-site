@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="text-2xl font-semibold text-white mb-4 tracking-tight">
-              Lunexa
+              SatWave
             </h3>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               {siteContent.footer.description}
@@ -98,7 +98,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm">
-            © {currentYear} Lunexa. All rights reserved.
+            © {currentYear} SatWave. All rights reserved.
           </p>
           <p className="text-white/40 text-xs max-w-md text-center md:text-right">
             Trading cryptocurrencies carries risk. Past performance does not guarantee future results.

@@ -1,14 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Wallet, Brain, ChartLine } from "phosphor-react";
+import {
+  Planet,
+  MapPinLine,
+  StackSimple,
+  ArrowsLeftRight,
+  TrendUp,
+} from "phosphor-react";
 import { siteContent } from "@/lib/content";
 import GlassCard from "./GlassCard";
 
 const iconMap = {
-  Wallet,
-  Brain,
-  ChartLine,
+  Planet,
+  MapPinLine,
+  StackSimple,
+  ArrowsLeftRight,
+  TrendUp,
 };
 
 export default function HowItWorks() {
@@ -24,7 +32,7 @@ export default function HowItWorks() {
           className="text-center mb-4"
           suppressHydrationWarning
         >
-          How It Works
+          How SatWave Works
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -34,10 +42,10 @@ export default function HowItWorks() {
           className="text-center text-white/60 text-lg max-w-2xl mx-auto mb-16"
           suppressHydrationWarning
         >
-          Get started in three simple steps
+          From orbital detection to measurable climate impact in five connected stages
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-8">
           {siteContent.howItWorks.map((step, index) => {
             const Icon = iconMap[step.icon as keyof typeof iconMap];
             return (

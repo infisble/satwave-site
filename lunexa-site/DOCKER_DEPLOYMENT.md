@@ -1,10 +1,10 @@
-# 🐳 Docker Deployment Guide
+# рџђі Docker Deployment Guide
 
-Complete guide for running Lunexa website in Docker containers.
+Complete guide for running SatWave website in Docker containers.
 
 ---
 
-## 📋 Prerequisites
+## рџ“‹ Prerequisites
 
 **Required Software:**
 - **Docker Desktop** (Windows/Mac) or **Docker Engine** (Linux)
@@ -19,7 +19,7 @@ Complete guide for running Lunexa website in Docker containers.
 
 ---
 
-## 🚀 Quick Start
+## рџљЂ Quick Start
 
 ### Build and Run with Docker Compose
 ```bash
@@ -30,14 +30,14 @@ docker-compose up --build -d
 Open your browser to: **http://localhost:3000**
 
 The command will:
-1. ✅ Build the Docker image
-2. ✅ Start the container in detached mode
-3. ✅ Set up health checks
-4. ✅ Enable auto-restart
+1. вњ… Build the Docker image
+2. вњ… Start the container in detached mode
+3. вњ… Set up health checks
+4. вњ… Enable auto-restart
 
 ---
 
-## 🛠️ Manual Docker Commands
+## рџ› пёЏ Manual Docker Commands
 
 ### Build and Start (Development)
 ```bash
@@ -54,19 +54,19 @@ docker-compose down
 ### Production Build
 ```bash
 # Build optimized production image
-docker build -t lunexa-site:latest .
+docker build -t satwave-site:latest .
 
 # Run production container
 docker run -d \
-  --name lunexa-production \
+  --name satwave-production \
   -p 3000:3000 \
   --restart unless-stopped \
-  lunexa-site:latest
+  satwave-site:latest
 ```
 
 ---
 
-## 📂 Docker Files Explained
+## рџ“‚ Docker Files Explained
 
 ### Dockerfile
 Multi-stage build for optimal image size:
@@ -82,7 +82,7 @@ Multi-stage build for optimal image size:
 
 ### docker-compose.yml
 Orchestration configuration:
-- Service: `lunexa-site`
+- Service: `satwave-site`
 - Port mapping: `3000:3000`
 - Health checks enabled
 - Auto-restart policy
@@ -96,7 +96,7 @@ Excludes unnecessary files from build:
 
 ---
 
-## 🔧 Configuration
+## рџ”§ Configuration
 
 ### Environment Variables
 
@@ -125,7 +125,7 @@ ports:
 
 ---
 
-## 📊 Container Management
+## рџ“Љ Container Management
 
 ### View Logs
 ```bash
@@ -136,7 +136,7 @@ docker-compose logs -f
 docker-compose logs --tail=100
 
 # Specific service
-docker logs lunexa-website
+docker logs satwave-website
 ```
 
 ### Restart Container
@@ -163,15 +163,15 @@ docker-compose down --rmi all
 ### Shell Access
 ```bash
 # Execute shell in container
-docker exec -it lunexa-website sh
+docker exec -it satwave-website sh
 
 # Run commands
-docker exec lunexa-website ls -la
+docker exec satwave-website ls -la
 ```
 
 ---
 
-## 🏥 Health Checks
+## рџЏҐ Health Checks
 
 Container includes automated health monitoring:
 - **Check**: HTTP GET to http://localhost:3000
@@ -183,12 +183,12 @@ Container includes automated health monitoring:
 View health status:
 ```bash
 docker ps
-docker inspect lunexa-website | grep -A 10 Health
+docker inspect satwave-website | grep -A 10 Health
 ```
 
 ---
 
-## 🐞 Troubleshooting
+## рџђћ Troubleshooting
 
 ### Port Already in Use
 ```bash
@@ -235,9 +235,9 @@ DOCKER_BUILDKIT=1 docker-compose build
 
 ---
 
-## 🔐 Security Best Practices
+## рџ”ђ Security Best Practices
 
-**✅ Implemented:**
+**вњ… Implemented:**
 - Non-root user (`nextjs:nodejs`)
 - Minimal Alpine base image
 - No unnecessary packages
@@ -247,7 +247,7 @@ DOCKER_BUILDKIT=1 docker-compose build
 **Additional Recommendations:**
 ```dockerfile
 # Scan for vulnerabilities
-docker scan lunexa-site:latest
+docker scan satwave-site:latest
 
 # Update base images regularly
 docker pull node:20-alpine
@@ -256,7 +256,7 @@ docker-compose build --pull
 
 ---
 
-## 📈 Performance Optimization
+## рџ“€ Performance Optimization
 
 ### Image Size
 Current optimizations:
@@ -281,7 +281,7 @@ docker-compose build --parallel
 ```yaml
 # docker-compose.yml - Add resource limits
 services:
-  lunexa-site:
+  satwave-site:
     deploy:
       resources:
         limits:
@@ -294,17 +294,17 @@ services:
 
 ---
 
-## 🌐 Production Deployment
+## рџЊђ Production Deployment
 
 ### Cloud Platforms
 
 **Docker Hub:**
 ```bash
 # Tag image
-docker tag lunexa-site:latest username/lunexa-site:latest
+docker tag satwave-site:latest username/satwave-site:latest
 
 # Push to Docker Hub
-docker push username/lunexa-site:latest
+docker push username/satwave-site:latest
 ```
 
 **AWS ECS / Azure / GCP:**
@@ -312,7 +312,7 @@ docker push username/lunexa-site:latest
 # Build for platform
 docker buildx build \
   --platform linux/amd64 \
-  -t lunexa-site:latest .
+  -t satwave-site:latest .
 ```
 
 **Kubernetes:**
@@ -321,27 +321,27 @@ docker buildx build \
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lunexa-deployment
+  name: satwave-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: lunexa
+      app: SatWave
   template:
     metadata:
       labels:
-        app: lunexa
+        app: SatWave
     spec:
       containers:
-      - name: lunexa
-        image: lunexa-site:latest
+      - name: SatWave
+        image: satwave-site:latest
         ports:
         - containerPort: 3000
 ```
 
 ---
 
-## 📚 Useful Commands Reference
+## рџ“љ Useful Commands Reference
 
 ```bash
 # Build
@@ -359,7 +359,7 @@ docker-compose logs --tail=50        # Last 50 lines
 
 # Status
 docker-compose ps                    # List containers
-docker stats lunexa-website          # Resource usage
+docker stats satwave-website          # Resource usage
 
 # Cleanup
 docker-compose down --rmi all        # Remove all
@@ -369,7 +369,7 @@ docker volume prune                  # Remove volumes
 
 ---
 
-## ✅ Checklist
+## вњ… Checklist
 
 **Before Deployment:**
 - [ ] Docker installed and running
@@ -387,7 +387,7 @@ docker volume prune                  # Remove volumes
 
 ---
 
-## 🎯 Summary
+## рџЋЇ Summary
 
 **Quick Commands:**
 ```bash
@@ -406,13 +406,13 @@ docker-compose down && docker system prune -f && docker-compose up --build -d
 
 **Access:**
 - Website: http://localhost:3000
-- Container: `docker exec -it lunexa-website sh`
+- Container: `docker exec -it satwave-website sh`
 
 **Status:**
-✅ Production-ready
-✅ Optimized for performance
-✅ Secure by default
-✅ Easy to deploy
+вњ… Production-ready
+вњ… Optimized for performance
+вњ… Secure by default
+вњ… Easy to deploy
 
 ---
 

@@ -30,7 +30,7 @@ export default function FAQ() {
           className="text-center text-white/60 text-lg mb-16"
           suppressHydrationWarning
         >
-          Everything you need to know about Lunexa
+          Everything you need to know about SatWave
         </motion.p>
 
         <div className="space-y-4">

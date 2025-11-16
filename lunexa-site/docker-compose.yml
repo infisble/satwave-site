@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  lunexa-site:
+  satwave-site:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: lunexa-website
+    container_name: satwave-website
     ports:
       - "3000:3000"
     environment:
@@ -13,7 +13,7 @@ services:
       - NEXT_TELEMETRY_DISABLED=1
     restart: unless-stopped
     networks:
-      - lunexa-network
+      - satwave-network
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000"]
       interval: 30s
@@ -22,5 +22,5 @@ services:
       start_period: 40s
 
 networks:
-  lunexa-network:
+  satwave-network:
     driver: bridge

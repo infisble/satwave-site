@@ -1,6 +1,6 @@
-# Lunexa Website - Site Map
+# SatWave Website - Site Map
 
-## 🌐 Live Routes
+## рџЊђ Live Routes
 
 ### Main Pages
 
@@ -9,7 +9,7 @@
 - `#hero` - Main hero with tagline & CTA
 - `#featured` - Featured in (logos)
 - `#testimonials` - User testimonials carousel
-- `#how-it-works` - 3-step process
+- `#how-it-works` - 5-stage process
 - `#features` - 4 core features
 - `#mission` - Mission statement
 - `#pricing` - Pricing tiers
@@ -18,7 +18,7 @@
 **Navigation:**
 - Top nav links to above sections
 - Sticky on scroll with blur
-- Mobile: Burger menu → right tray
+- Mobile: Burger menu в†’ right tray
 
 #### 2. About - `/about`
 **Sections:**
@@ -31,7 +31,7 @@
 #### 3. Contact - `/contact`
 **Content:**
 - Contact form (name, email, message)
-- Email: support@lunexa.com
+- Email: support@satwave.com
 - Office address
 - Social links (Twitter, Discord)
 
@@ -47,10 +47,10 @@
 
 #### 5. Blog Post - `/blog/[slug]`
 **Available slugs:**
-- `ai-driven-crypto-trading`
-- `risk-first-approach`
-- `backtesting-without-self-deception`
-- `explainable-ai-in-trading`
+- `making-waste-visible`
+- `computer-vision-for-recyclers`
+- `citizen-ecosystem`
+- `impact-reporting`
 
 **Each post includes:**
 - Full article (800-1200 words)
@@ -61,44 +61,44 @@
 
 ---
 
-## 📱 Navigation Structure
+## рџ“± Navigation Structure
 
 ### Primary Navigation (Top Bar)
 *Only hash links to homepage sections*
-- Features → `/#features`
-- How It Works → `/#how-it-works`
-- Testimonials → `/#testimonials`
-- Pricing → `/#pricing`
-- FAQ → `/#faq`
+- Features в†’ `/#features`
+- How It Works в†’ `/#how-it-works`
+- Testimonials в†’ `/#testimonials`
+- Pricing в†’ `/#pricing`
+- FAQ в†’ `/#faq`
 - **Get Started** (CTA button)
 
 ### Secondary Navigation (Footer)
 
 **Product**
-- Features → `/#features`
-- Pricing → `/#pricing`
-- FAQ → `/#faq`
+- Features в†’ `/#features`
+- Pricing в†’ `/#pricing`
+- FAQ в†’ `/#faq`
 
 **Company**
-- About → `/about`
-- Blog → `/blog`
-- Contact → `/contact`
+- About в†’ `/about`
+- Blog в†’ `/blog`
+- Contact в†’ `/contact`
 
 **Legal**
-- Privacy Policy → `#`
-- Terms of Service → `#`
-- Risk Disclosure → `#`
+- Privacy Policy в†’ `#`
+- Terms of Service в†’ `#`
+- Data Ethics ???????T `#`
 
 ### Mobile Navigation (Burger Menu)
 *Same as primary nav, plus:*
-- About → `/about`
-- Blog → `/blog`
-- Contact → `/contact`
+- About в†’ `/about`
+- Blog в†’ `/blog`
+- Contact в†’ `/contact`
 - **Get Started** (CTA button)
 
 ---
 
-## 🎨 Component Map
+## рџЋЁ Component Map
 
 ### Global Components
 - `<Navbar />` - Sticky header (all pages)
@@ -111,7 +111,7 @@
 - `<Featured />` - Logo section
 - `<Testimonials />` - Carousel
   - `<GlassCard />` (repeated)
-- `<HowItWorks />` - 3-step process
+- `<HowItWorks />` - 5-stage process
   - `<GlassCard />` (repeated)
 - `<Features />` - Feature grid
   - `<GlassCard />` (repeated)
@@ -134,77 +134,77 @@
 
 ---
 
-## 📂 File Structure Map
+## рџ“‚ File Structure Map
 
 ```
-lunexa-site/
-│
-├── app/                         # Next.js App Router
-│   ├── layout.tsx               # Root layout (metadata, font)
-│   ├── page.tsx                 # Homepage
-│   ├── globals.css              # Global styles
-│   │
-│   ├── about/
-│   │   └── page.tsx             # About page
-│   │
-│   ├── contact/
-│   │   └── page.tsx             # Contact page
-│   │
-│   └── blog/
-│       ├── page.tsx             # Blog listing
-│       └── [slug]/
-│           └── page.tsx         # Blog post detail
-│
-├── components/                  # React components
-│   ├── Navbar.tsx               # Top navigation
-│   ├── MobileTray.tsx           # Mobile menu
-│   ├── Footer.tsx               # Site footer
-│   │
-│   ├── Hero.tsx                 # Hero section
-│   ├── PipelineScene.tsx        # 3D canvas animation
-│   ├── Featured.tsx             # Logos
-│   ├── Testimonials.tsx         # Carousel
-│   ├── HowItWorks.tsx           # 3-step
-│   ├── Features.tsx             # Feature grid
-│   ├── Mission.tsx              # Mission text
-│   ├── Pricing.tsx              # Pricing table
-│   ├── FAQ.tsx                  # Accordion
-│   │
-│   ├── NeumorphButton.tsx       # Reusable button
-│   └── GlassCard.tsx            # Reusable card
-│
-├── lib/
-│   └── content.ts               # All site content & blog posts
-│
-├── public/                      # Static assets (future)
-│   └── images/                  # Placeholder for images
-│
-├── Configuration Files
-│   ├── package.json             # Dependencies
-│   ├── tsconfig.json            # TypeScript config
-│   ├── tailwind.config.ts       # Tailwind config
-│   ├── postcss.config.mjs       # PostCSS config
-│   ├── next.config.ts           # Next.js config
-│   ├── .eslintrc.json           # ESLint rules
-│   └── .gitignore               # Git ignore
-│
-└── Documentation
-    ├── README.md                # Technical docs
-    ├── QUICKSTART.md            # Quick start guide
-    ├── PROJECT_SUMMARY.md       # Project overview
-    └── SITEMAP.md               # This file
+satwave-site/
+в”‚
+в”њв”Ђв”Ђ app/                         # Next.js App Router
+в”‚   в”њв”Ђв”Ђ layout.tsx               # Root layout (metadata, font)
+в”‚   в”њв”Ђв”Ђ page.tsx                 # Homepage
+в”‚   в”њв”Ђв”Ђ globals.css              # Global styles
+в”‚   в”‚
+в”‚   в”њв”Ђв”Ђ about/
+в”‚   в”‚   в””в”Ђв”Ђ page.tsx             # About page
+в”‚   в”‚
+в”‚   в”њв”Ђв”Ђ contact/
+в”‚   в”‚   в””в”Ђв”Ђ page.tsx             # Contact page
+в”‚   в”‚
+в”‚   в””в”Ђв”Ђ blog/
+в”‚       в”њв”Ђв”Ђ page.tsx             # Blog listing
+в”‚       в””в”Ђв”Ђ [slug]/
+в”‚           в””в”Ђв”Ђ page.tsx         # Blog post detail
+в”‚
+в”њв”Ђв”Ђ components/                  # React components
+в”‚   в”њв”Ђв”Ђ Navbar.tsx               # Top navigation
+в”‚   в”њв”Ђв”Ђ MobileTray.tsx           # Mobile menu
+в”‚   в”њв”Ђв”Ђ Footer.tsx               # Site footer
+в”‚   в”‚
+в”‚   в”њв”Ђв”Ђ Hero.tsx                 # Hero section
+в”‚   в”њв”Ђв”Ђ PipelineScene.tsx        # 3D canvas animation
+в”‚   в”њв”Ђв”Ђ Featured.tsx             # Logos
+в”‚   в”њв”Ђв”Ђ Testimonials.tsx         # Carousel
+в”‚   в”њв”Ђв”Ђ HowItWorks.tsx           # 5-stage
+в”‚   в”њв”Ђв”Ђ Features.tsx             # Feature grid
+в”‚   в”њв”Ђв”Ђ Mission.tsx              # Mission text
+в”‚   в”њв”Ђв”Ђ Pricing.tsx              # Pricing table
+в”‚   в”њв”Ђв”Ђ FAQ.tsx                  # Accordion
+в”‚   в”‚
+в”‚   в”њв”Ђв”Ђ NeumorphButton.tsx       # Reusable button
+в”‚   в””в”Ђв”Ђ GlassCard.tsx            # Reusable card
+в”‚
+в”њв”Ђв”Ђ lib/
+в”‚   в””в”Ђв”Ђ content.ts               # All site content & blog posts
+в”‚
+в”њв”Ђв”Ђ public/                      # Static assets (future)
+в”‚   в””в”Ђв”Ђ images/                  # Placeholder for images
+в”‚
+в”њв”Ђв”Ђ Configuration Files
+в”‚   в”њв”Ђв”Ђ package.json             # Dependencies
+в”‚   в”њв”Ђв”Ђ tsconfig.json            # TypeScript config
+в”‚   в”њв”Ђв”Ђ tailwind.config.ts       # Tailwind config
+в”‚   в”њв”Ђв”Ђ postcss.config.mjs       # PostCSS config
+в”‚   в”њв”Ђв”Ђ next.config.ts           # Next.js config
+в”‚   в”њв”Ђв”Ђ .eslintrc.json           # ESLint rules
+в”‚   в””в”Ђв”Ђ .gitignore               # Git ignore
+в”‚
+в””в”Ђв”Ђ Documentation
+    в”њв”Ђв”Ђ README.md                # Technical docs
+    в”њв”Ђв”Ђ QUICKSTART.md            # Quick start guide
+    в”њв”Ђв”Ђ PROJECT_SUMMARY.md       # Project overview
+    в””в”Ђв”Ђ SITEMAP.md               # This file
 ```
 
 ---
 
-## 🔗 Internal Links
+## рџ”— Internal Links
 
 ### Cross-Page Links
-- Homepage → About: Footer or mobile menu
-- Homepage → Contact: Footer or mobile menu
-- Homepage → Blog: Footer or mobile menu
-- Blog listing → Individual posts: Click card
-- Any page → Homepage: Click logo
+- Homepage в†’ About: Footer or mobile menu
+- Homepage в†’ Contact: Footer or mobile menu
+- Homepage в†’ Blog: Footer or mobile menu
+- Blog listing в†’ Individual posts: Click card
+- Any page в†’ Homepage: Click logo
 
 ### Hash Links (Homepage only)
 - All work within `/#section-id`
@@ -213,14 +213,14 @@ lunexa-site/
 
 ---
 
-## 🎯 User Flows
+## рџЋЇ User Flows
 
 ### New Visitor Flow
 1. Land on homepage (`/`)
-2. Read hero → scroll through sections
-3. See testimonials → How It Works → Features
-4. Check pricing → Compare tiers
-5. Read FAQ → Answer questions
+2. Read hero в†’ scroll through sections
+3. See testimonials в†’ How It Works в†’ Features
+4. Check pricing в†’ Compare tiers
+5. Read FAQ в†’ Answer questions
 6. Click "Get Started" CTA
 
 ### Blog Reader Flow
@@ -239,60 +239,60 @@ lunexa-site/
 
 ### Mobile User Flow
 1. Land on homepage
-2. Tap burger icon → menu slides in
+2. Tap burger icon в†’ menu slides in
 3. Navigate via menu
-4. Close menu → explore page
+4. Close menu в†’ explore page
 5. Sticky nav available on scroll
 
 ---
 
-## 📊 Content Hierarchy
+## рџ“Љ Content Hierarchy
 
 ### Homepage Hierarchy
 ```
 Hero (h1)
-├── Tagline (main message)
-├── Subtitle (explanation)
-└── CTAs (primary + secondary)
+в”њв”Ђв”Ђ Tagline (main message)
+в”њв”Ђв”Ђ Subtitle (explanation)
+в””в”Ђв”Ђ CTAs (primary + secondary)
 
 Featured (h2)
-└── Logos (visual credibility)
+в””в”Ђв”Ђ Logos (visual credibility)
 
 Testimonials (h2)
-└── 6 cards (social proof)
+в””в”Ђв”Ђ 6 cards (social proof)
 
 How It Works (h2)
-└── 3 steps (process clarity)
+в””в”Ђв”Ђ 5 stages (orbit-to-ground process)
 
 Features (h2)
-└── 4 features (value props)
+в””в”Ђв”Ђ 4 features (value props)
 
 Mission (h2)
-└── 2 paragraphs (vision/mission)
+в””в”Ђв”Ђ 2 paragraphs (vision/mission)
 
 Pricing (h2)
-└── 3 tiers (monetization)
+в””в”Ђв”Ђ 3 tiers (monetization)
 
 FAQ (h2)
-└── 8 Q&A pairs (objection handling)
+в””в”Ђв”Ђ 8 Q&A pairs (objection handling)
 ```
 
 ### About Page Hierarchy
 ```
 Title (h1)
-└── Subtitle
+в””в”Ђв”Ђ Subtitle
 
 Mission (h2)
-└── Story paragraphs
+в””в”Ђв”Ђ Story paragraphs
 
 Values (h2)
-└── 4 value cards (h3 each)
+в””в”Ђв”Ђ 4 value cards (h3 each)
 
 Team (h2)
-└── 4 member cards
+в””в”Ђв”Ђ 4 member cards
 
 Technology (h2)
-└── Stack list
+в””в”Ђв”Ђ Stack list
 
 Compliance (notice)
 ```
@@ -300,32 +300,32 @@ Compliance (notice)
 ### Contact Page Hierarchy
 ```
 Title (h1)
-└── Subtitle
+в””в”Ђв”Ђ Subtitle
 
 Form (h2)
-├── Name field
-├── Email field
-├── Message field
-└── Submit button
+в”њв”Ђв”Ђ Name field
+в”њв”Ђв”Ђ Email field
+в”њв”Ђв”Ђ Message field
+в””в”Ђв”Ђ Submit button
 
 Contact Info
-├── Email (h3)
-├── Office (h3)
-└── Social (h3)
+в”њв”Ђв”Ђ Email (h3)
+в”њв”Ђв”Ђ Office (h3)
+в””в”Ђв”Ђ Social (h3)
 ```
 
 ### Blog Hierarchy
 ```
 Blog (h1)
-└── Subtitle
+в””в”Ђв”Ђ Subtitle
 
 Post Listing
-└── 4 post cards
-    ├── Cover
-    ├── Meta (date, time)
-    ├── Title (h2)
-    ├── Excerpt
-    └── Tags
+в””в”Ђв”Ђ 4 post cards
+    в”њв”Ђв”Ђ Cover
+    в”њв”Ђв”Ђ Meta (date, time)
+    в”њв”Ђв”Ђ Title (h2)
+    в”њв”Ђв”Ђ Excerpt
+    в””в”Ђв”Ђ Tags
 ```
 
 ### Blog Post Hierarchy
@@ -335,50 +335,51 @@ Back link
 Meta info
 
 Title (h1)
-└── Tags
+в””в”Ђв”Ђ Tags
 
 Cover image
 
 Content
-├── h2 (main sections)
-├── h3 (subsections)
-├── Paragraphs
-├── Lists
-└── Code snippets
+в”њв”Ђв”Ђ h2 (main sections)
+в”њв”Ђв”Ђ h3 (subsections)
+в”њв”Ђв”Ђ Paragraphs
+в”њв”Ђв”Ђ Lists
+в””в”Ђв”Ђ Code snippets
 
 CTA card
 ```
 
 ---
 
-## 🚀 Future Expansion
+## рџљЂ Future Expansion
 
 **Potential new routes:**
-- `/dashboard` - User dashboard
-- `/login` - Authentication
-- `/signup` - Registration
-- `/docs` - API documentation
+- `/impact-dashboard` - Live metrics on dumps cleared, tons diverted, and CO₂ savings
+- `/material-exchange` - Standalone marketplace for recyclers
+- `/citizen-app` - Progressive web app for community reporting
+- `/data-room` - Secure access to satellite scenes and ground truth
+- `/docs` - API documentation for sensor and IoT partners
 - `/pricing` - Dedicated pricing page (currently section)
-- `/testimonials` - Full testimonials page
-- `/case-studies` - Success stories
-- `/api-reference` - API docs
+- `/testimonials` - Full success stories
+- `/case-studies` - Deep dives on deployments
+- `/api-reference` - Developer portal
 - `/changelog` - Product updates
 
 **Potential blog categories:**
 - `/blog/category/[category]`
-- Categories: Trading, AI, Risk, Strategy, Market Analysis
+- Categories: Earth Observation, Computer Vision, Circular Economy, Civic Tech, Impact Reporting
 
 **Potential user flows:**
-- `/onboarding` - New user setup
-- `/profile` - User settings
-- `/integrations` - Exchange connections
-- `/strategies` - Strategy builder
-- `/backtest` - Backtesting tool
-- `/live-trading` - Live dashboard
+- `/onboarding` - New municipality setup
+- `/cleanup-schedule` - Assign field crews to satellite alerts
+- `/recycler-marketplace` - Bid, schedule pickup, and close the loop
+- `/citizen-reports` - Community engagement + gamification
+- `/sensor-network` - Manage smart bins, drones, and camera feeds
+- `/impact-reporting` - Export ESG/CSRD packets
 
 ---
 
-## 📱 Responsive Breakpoints
+## рџ“± Responsive Breakpoints
 
 **Desktop**: `1024px+`
 - Full navigation visible
@@ -398,7 +399,7 @@ CTA card
 
 ---
 
-## ♿ Accessibility Map
+## в™ї Accessibility Map
 
 **Keyboard Navigation:**
 - Tab through all interactive elements
@@ -421,4 +422,8 @@ CTA card
 
 **Last Updated**: Build completion
 **Version**: 1.0.0
-**Status**: Production-ready ✅
+**Status**: Production-ready вњ…
+
+
+
+

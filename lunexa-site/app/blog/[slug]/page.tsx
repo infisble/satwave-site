@@ -140,7 +140,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           >
             <h3 className="text-2xl mb-4">Ready to start trading with AI?</h3>
             <p className="text-white/70 mb-6">
-              Join thousands of traders using Lunexa to automate their crypto strategies
+              Join thousands of traders using SatWave to automate their crypto strategies
             </p>
             <a
               href="/#pricing"
