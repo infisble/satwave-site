@@ -31,11 +31,11 @@ export default function PipelineScene() {
         >
           <div suppressHydrationWarning>
             <Spline
-              scene="https://prod.spline.design/9338bcbf-c079-4fbe-8b7e-0faf9f20c533/scene.splinecode"
+              scene="/spline/holographic-earth.splinecode"
               style={{
                 width: "100%",
                 height: "100%",
-                minHeight: "100vh",
+                minHeight: "120vh",
               }}
             />
           </div>

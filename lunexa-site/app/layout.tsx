@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import PipelineScene from "@/components/PipelineScene";
 
 export const metadata: Metadata = {
   title: "SatWave | AI-Powered Crypto Trading Platform",
@@ -36,29 +37,18 @@ export default function RootLayout({
               position: "fixed",
               top: "-15%",
               left: "50%",
-              transform: "translateX(-50%) scale(1.5)",
+              transform: "translateX(-50%) scale(1.4)",
               width: "140vw",
               height: "140vh",
               maxWidth: "2000px",
               maxHeight: "2000px",
               zIndex: 1,
               overflow: "hidden",
+              pointerEvents: "none",
             }}
+            aria-hidden="true"
           >
-            <iframe
-              src="https://my.spline.design/holographicearthwithdynamiclines-Jvtm4IAVrBcq00bvfc8tiTIS/"
-              title="Spline 3D Planet"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "calc(100% + 80px)",
-                border: "none",
-                pointerEvents: "none",
-                opacity: 0.7,
-              }}
-            />
+            <PipelineScene />
           </div>
 
           {/* All UI content */}
