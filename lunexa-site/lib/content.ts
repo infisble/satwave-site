@@ -232,6 +232,31 @@ export const siteContent = {
       answer:
         "Free: Community Discord. Pro: Email + priority Discord channel (24h response). Enterprise: Dedicated Slack channel + phone support with <2h SLA.",
     },
+    {
+      question: "What is SatWave?",
+      answer:
+        "SatWave is a climate-tech platform that turns waste data into measurable action. It blends satellite imagery, AI computer vision, and smart waste infrastructure to detect illegal dumping, classify material types, and connect recyclers to new secondary raw material streams.",
+    },
+    {
+      question: "What problems does SatWave solve?",
+      answer:
+        "Illegal dumps grow faster than they are cleaned, recoverable material is buried in landfills, and cities lack real-time visibility. SatWave closes that gap with a waste intelligence layer that spots suspicious dumps, understands the material on the ground, routes it to recyclers as a monetizable resource, and tracks the impact of every cleanup.",
+    },
+    {
+      question: "How does SatWave work?",
+      answer:
+        "Detect: Sentinel-2 and other imagery reveal illegal dumps and temporal changes. Enrich: Local cameras, smart bins, and citizen reports add ground truth photos and GPS. Classify: AI models like YOLOv8, U-Net, and Detectron2 identify waste types and bundle them into raw-material batches. Match & Monetize: Recyclers use an interactive map and marketplace to discover batches, price them, and schedule pickup. Measure Impact: Every cleaned site logs recovered materials and CO2 savings.",
+    },
+    {
+      question: "Who does SatWave serve?",
+      answer:
+        "Municipalities get a live dump map, hotspot analytics, and smarter cleanup routing. Recyclers and waste companies access pre-qualified batches and forecasting. Citizens can report waste and gamify participation, while IoT and smart-bin providers integrate via API to become part of the intelligence network.",
+    },
+    {
+      question: "What is SatWave's vision?",
+      answer:
+        "SatWave believes waste is a data problem. By making every pile traceable from orbit to street level, the platform aims to shrink illegal dumping, raise recycling rates, unlock new value from secondary raw materials, and bring full transparency to global waste management--moving cities and companies from reactive cleanup toward proactive, profitable circularity.",
+    },
   ],
 
   footer: {
