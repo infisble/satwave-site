@@ -3,9 +3,9 @@ import "./globals.css";
 import PipelineScene from "@/components/PipelineScene";
 
 export const metadata: Metadata = {
-  title: "SatWave | AI-Powered Crypto Trading Platform",
-  description: "Democratizing institutional crypto strategies with transparent AI. Automate decisions, reduce risk, and maximize returns with SatWave's intelligent trading assistant.",
-  keywords: ["AI trading", "crypto", "automated trading", "risk management", "blockchain", "fintech"],
+  title: "SatWave | Recycling Company",
+  description: "SatWave turns waste intelligence into measurable impact for recycling teams and municipalities.",
+  keywords: ["recycling", "waste intelligence", "circular economy", "satellite monitoring", "environmental data"],
 };
 
 export default function RootLayout({

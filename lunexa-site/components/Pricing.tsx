@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Check } from "phosphor-react";
 import { siteContent } from "@/lib/content";
+import { getInitialMotionState } from "@/lib/motion";
 import GlassCard from "./GlassCard";
 import NeumorphButton from "./NeumorphButton";
 
@@ -13,7 +14,10 @@ export default function Pricing() {
         {/* suppressHydrationWarning needed: Framer Motion's whileInView uses IntersectionObserver
             which is client-only and causes different initial states between server and client */}
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0 }
+          )}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-4"
@@ -22,7 +26,10 @@ export default function Pricing() {
           Simple, Transparent Pricing
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0 }
+          )}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}

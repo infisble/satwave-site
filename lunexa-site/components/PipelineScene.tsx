@@ -1,53 +1,118 @@
 "use client";
 
-import { Suspense, lazy, useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import { useCallback, useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { getInitialMotionState } from "@/lib/motion";
+import PipelineSceneCanvas from "./PipelineSceneCanvas";
 
-// Lazy load Spline to improve initial load time
-const Spline = lazy(() => import("@splinetool/react-spline"));
+const Spline = dynamic(() => import("./SplineClient"), {
+  ssr: false,
+  loading: () => <FallbackVisual />,
+});
 
 export default function PipelineScene() {
-  const [isMounted, setIsMounted] = useState(false);
+  const [sceneReady, setSceneReady] = useState(false);
+  const [sceneErrored, setSceneErrored] = useState(false);
+
+  const ensureWebGL = useCallback(() => {
+    const canvas = document.createElement("canvas");
+    return Boolean(
+      canvas.getContext("webgl") || canvas.getContext("experimental-webgl")
+    );
+  }, []);
 
   useEffect(() => {
-    setIsMounted(true);
+    if (!ensureWebGL()) {
+      console.error("WebGL initialization failed, reloading...");
+      setTimeout(() => window.location.reload(), 200);
+    }
+  }, [ensureWebGL]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let cancelled = false;
+
+    fetch("/api/spline", {
+      cache: "reload",
+      signal: controller.signal,
+    }).catch((error) => {
+      if (!cancelled) {
+        console.error("Failed to preload Spline scene:", error);
+        setSceneErrored(true);
+      }
+    });
+
+    return () => {
+      cancelled = true;
+      controller.abort();
+    };
   }, []);
+
+  const renderSpline = () => {
+    if (sceneErrored) {
+      return null;
+    }
+
+    return (
+      <div className="absolute inset-0" suppressHydrationWarning>
+        <Spline
+          scene="/api/spline"
+          onLoad={() => setSceneReady(true)}
+          onError={() => setSceneErrored(true)}
+          style={{
+            width: "100%",
+            height: "100%",
+            minHeight: "120vh",
+          }}
+        />
+      </div>
+    );
+  };
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
+      initial={getInitialMotionState(
+        { opacity: 0, scale: 0.95 },
+        { opacity: 1, scale: 1 }
+      )}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.5, ease: "easeOut" }}
       className="relative w-full h-full"
       suppressHydrationWarning
     >
-      {isMounted ? (
-        <Suspense
-          fallback={
-            <div className="w-full h-full flex items-center justify-center bg-dark-bg" suppressHydrationWarning>
-              <div className="text-white/30 text-lg animate-pulse">Loading 3D Scene...</div>
-            </div>
-          }
+      <div className="absolute inset-0" aria-hidden="true">
+        <PipelineSceneCanvas />
+      </div>
+
+      {renderSpline()}
+
+      {sceneErrored && (
+        <div
+          className="absolute inset-0 flex flex-col items-center justify-center bg-dark-bg/80 text-center px-6"
+          suppressHydrationWarning
         >
-          <div suppressHydrationWarning>
-            <Spline
-              scene="/spline/holographic-earth.splinecode"
-              style={{
-                width: "100%",
-                height: "100%",
-                minHeight: "120vh",
-              }}
-            />
-          </div>
-        </Suspense>
-      ) : (
-        <div className="w-full h-full flex items-center justify-center bg-dark-bg" suppressHydrationWarning>
-          <div className="text-white/30 text-lg animate-pulse">Loading 3D Scene...</div>
+          <p className="text-white/60 text-sm mb-4">
+            3D сцена временно недоступна. Попробуйте обновить страницу или проверьте, что WebGL включён в браузере.
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-4 py-2 rounded-xl bg-white/10 text-white text-sm hover:bg-white/20 transition-colors"
+          >
+            Обновить страницу
+          </button>
         </div>
       )}
 
-      {/* Gradient overlay for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/30 via-transparent to-dark-bg/60 pointer-events-none" suppressHydrationWarning />
     </motion.div>
+  );
+}
+
+function FallbackVisual() {
+  return (
+    <div className="absolute inset-0" aria-hidden="true">
+      <PipelineSceneCanvas />
+    </div>
   );
 }

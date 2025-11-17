@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { siteContent } from "@/lib/content";
+import { getInitialMotionState } from "@/lib/motion";
 import NeumorphButton from "./NeumorphButton";
 
 export default function Hero() {
@@ -12,7 +13,10 @@ export default function Hero() {
         {/* suppressHydrationWarning needed: Framer Motion components may have different
             initial states during hydration due to animations and event listeners */}
         <motion.div
-          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 30, filter: "blur(10px)" },
+            { opacity: 1, y: 0, filter: "blur(0px)" }
+          )}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.2 }}
           suppressHydrationWarning
@@ -22,7 +26,10 @@ export default function Hero() {
           </h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={getInitialMotionState(
+              { opacity: 0, y: 20 },
+              { opacity: 1, y: 0 }
+            )}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto mb-12 font-light leading-relaxed"
@@ -32,7 +39,10 @@ export default function Hero() {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={getInitialMotionState(
+              { opacity: 0, y: 20 },
+              { opacity: 1, y: 0 }
+            )}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -49,7 +59,10 @@ export default function Hero() {
 
         {/* UI Mockup */}
         <motion.div
-          initial={{ opacity: 0, y: 60, filter: "blur(20px)" }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 60, filter: "blur(20px)" },
+            { opacity: 1, y: 0, filter: "blur(0px)" }
+          )}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-20 relative"
@@ -99,7 +112,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={getInitialMotionState({ opacity: 0 }, { opacity: 1 })}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"

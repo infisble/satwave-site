@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { List, X } from "phosphor-react";
+import { getInitialMotionState } from "@/lib/motion";
 import MobileTray from "./MobileTray";
 
 export default function Navbar() {
@@ -38,7 +39,7 @@ export default function Navbar() {
       {/* suppressHydrationWarning needed: Framer Motion components may have different
           initial states during hydration due to animations and event listeners */}
       <motion.nav
-        initial={{ y: -100 }}
+        initial={getInitialMotionState({ y: -100 }, { y: 0 })}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

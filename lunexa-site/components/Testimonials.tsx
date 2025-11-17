@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { siteContent } from "@/lib/content";
 import GlassCard from "./GlassCard";
 import { useEffect, useRef, useState } from "react";
+import { getInitialMotionState } from "@/lib/motion";
 
 export default function Testimonials() {
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -44,7 +45,10 @@ export default function Testimonials() {
         {/* suppressHydrationWarning needed: Framer Motion's whileInView uses IntersectionObserver
             which is client-only and causes different initial states between server and client */}
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0 }
+          )}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-4"
@@ -53,7 +57,10 @@ export default function Testimonials() {
           Trusted by Circularity Leaders
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0 }
+          )}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}

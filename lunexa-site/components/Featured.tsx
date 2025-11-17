@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { siteContent } from "@/lib/content";
+import { getInitialMotionState } from "@/lib/motion";
 
 export default function Featured() {
   return (
@@ -10,7 +11,7 @@ export default function Featured() {
         {/* suppressHydrationWarning needed: Framer Motion's whileInView uses IntersectionObserver
             which is client-only and causes different initial states between server and client */}
         <motion.p
-          initial={{ opacity: 0 }}
+          initial={getInitialMotionState({ opacity: 0 }, { opacity: 1 })}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="text-center text-white/40 text-sm uppercase tracking-wider mb-12"
@@ -23,7 +24,10 @@ export default function Featured() {
           {siteContent.featured.logos.map((logo, index) => (
             <motion.div
               key={logo.name}
-              initial={{ opacity: 0, y: 20 }}
+              initial={getInitialMotionState(
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0 }
+              )}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}

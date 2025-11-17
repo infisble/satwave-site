@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/clean-next.js",
+    "clean": "node scripts/clean-next.js",
+    "reset": "node scripts/reset-env.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,6 +14,7 @@
   "dependencies": {
     "@splinetool/react-spline": "^4.1.0",
     "@splinetool/runtime": "^1.11.4",
+    "@upstash/redis": "^1.30.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
     "next": "^15.1.6",

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "phosphor-react";
 import { siteContent } from "@/lib/content";
+import { getInitialMotionState } from "@/lib/motion";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -14,7 +15,10 @@ export default function FAQ() {
         {/* suppressHydrationWarning needed: Framer Motion's whileInView uses IntersectionObserver
             which is client-only and causes different initial states between server and client */}
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0 }
+          )}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-4"
@@ -23,7 +27,10 @@ export default function FAQ() {
           Frequently Asked Questions
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={getInitialMotionState(
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0 }
+          )}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
@@ -40,7 +47,10 @@ export default function FAQ() {
             return (
               <motion.div
                 key={item.question}
-                initial={{ opacity: 0, y: 20 }}
+                initial={getInitialMotionState(
+                  { opacity: 0, y: 20 },
+                  { opacity: 1, y: 0 }
+                )}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}

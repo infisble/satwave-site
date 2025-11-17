@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 
 export default function PipelineSceneCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -110,12 +109,7 @@ export default function PipelineSceneCanvas() {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1.5, ease: "easeOut" }}
-      className="relative w-full h-full"
-    >
+    <div className="relative w-full h-full" suppressHydrationWarning>
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"
@@ -124,6 +118,6 @@ export default function PipelineSceneCanvas() {
 
       {/* Gradient overlay for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/30 via-transparent to-dark-bg/60 pointer-events-none" />
-    </motion.div>
+    </div>
   );
 }

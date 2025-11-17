@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Eye, ShieldCheck, Brain, User } from "phosphor-react";
+import { Eye, ShieldCheck, ArrowsClockwise, Users } from "phosphor-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GlassCard from "@/components/GlassCard";
@@ -10,8 +10,8 @@ import { aboutContent } from "@/lib/content";
 const valueIcons = {
   Eye,
   ShieldCheck,
-  Brain,
-  User,
+  ArrowsClockwise,
+  Users,
 };
 
 export default function AboutPage() {
